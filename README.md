@@ -33,10 +33,28 @@ describe('Google searching', function() {
 
 ## How to use
 
-````
-npm install -g mocha-casperjs
-mocha-casperjs
-````
+### Installation
+
+```bash
+> npm install mocha -g
+> npm install chai -g
+> npm install phantomjs -g
+# 
+# If PhantomJS binary doesn't become available on your path (it should):
+# Please note where npm installs phantomjs binary, NPM should tell you that 
+# while installing phantomjs package. Export the path to unix PATH manually.
+#
+> npm install casperjs -g
+> npm install mocha-casperjs -g
+> npm install casper-chai -g
+```
+
+### Usage
+
+```console
+# Run:
+> mocha-casperjs
+```
 
 Like Mocha, if you place your tests in the `test` or `tests` directory, it will find them and run them. You can also specify tests to run individually instead.
 
